@@ -1,5 +1,5 @@
 {
-    "name": "canal-web/magento-selectin",
+    "name": "canal-web/magento-selection",
     "type": "magento-module",
     "description": "Magento module retrieving a collection based on a an attribute",
     "require": {
