@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Canalweb_Selection>
+      <active>true</active>
+      <codePool>local</codePool>
+  </Canalweb_Selection>
+  </modules>
+</config>
