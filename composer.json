@@ -1,0 +1,13 @@
+{
+    "name": "canal-web/magento-selectin",
+    "type": "magento-module",
+    "description": "Magento module retrieving a collection based on a an attribute",
+    "require": {
+    },
+    "authors":[
+      {
+            "name":"Fabio Cerqueira",
+            "email":"fabio@canal-web.fr"
+        }
+    ]
+}
