@@ -3,7 +3,7 @@
   <modules>
     <Canalweb_Selection>
       <active>true</active>
-      <codePool>local</codePool>
+      <codePool>community</codePool>
   </Canalweb_Selection>
   </modules>
 </config>
