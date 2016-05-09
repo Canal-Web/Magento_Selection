@@ -3,6 +3,7 @@
     "type": "magento-module",
     "description": "Magento module retrieving a collection based on a an attribute",
     "require": {
+        "magento-hackathon/magento-composer-installer": "*"
     },
     "authors":[
       {
