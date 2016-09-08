@@ -1,0 +1,35 @@
+AAAAAAAAAAAAAAAAAAa
+<?php $_items = $this->getItems() ?>
+<?php if (count($_items) > 0): ?>
+<div class="container selection">
+	<div class="inner">
+        <div class="heading">
+    		<h2>Selection block title</h2>
+        </div>
+        <div class="content">
+            <ul class="products-list">
+            <?php foreach ($_items as $_item): ?>
+                <?php $_item = Mage::getModel('catalog/product')->load($_item->getEntityId()); ?>
+                <li class="item product">
+                    <?php
+                        $imgurl = $this->helper('catalog/image')->init($_item,'small_image')->keepAspectRatio(true)->resize(250,150);
+                    ?>
+                    <img src="<?php echo $imgurl; ?>" width="250" height="150" alt="<?php echo $this->htmlEscape($_item->getName()) ?>" />
+                    <h3 class="product-name"><?php echo $this->htmlEscape($_item->getName()) ?></h3>
+                    <?php if ($_item->isSaleable()): ?>
+                        <?php $itemurl = Mage::getUrl($_item->getUrlPath()); ?>
+                        <a href="<?php echo $itemurl ?>" title="<?php echo $this->htmlEscape($_item->getName()) ?>" class="button action available">
+                            <?php echo $this->__("J'en profite");?>
+                        </a>
+                    <?php else: ?>
+                        <p class="button action not-available">
+                            <?php echo $this->__('Épuisé');?>
+                        </p>
+                    <?php endif; ?>
+                </li>
+            <?php endforeach; ?>
+            </ul>
+        </div>
+	</div>
+</div>
+<?php endif; ?>
