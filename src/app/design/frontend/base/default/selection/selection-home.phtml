@@ -1,4 +1,3 @@
-AAAAAAAAAAAAAAAAAAa
 <?php $_items = $this->getItems() ?>
 <?php if (count($_items) > 0): ?>
 <div class="container selection">
@@ -19,11 +18,11 @@ AAAAAAAAAAAAAAAAAAa
                     <?php if ($_item->isSaleable()): ?>
                         <?php $itemurl = Mage::getUrl($_item->getUrlPath()); ?>
                         <a href="<?php echo $itemurl ?>" title="<?php echo $this->htmlEscape($_item->getName()) ?>" class="button action available">
-                            <?php echo $this->__("J'en profite");?>
+                            <?php echo $this->__("Know more");?>
                         </a>
                     <?php else: ?>
                         <p class="button action not-available">
-                            <?php echo $this->__('Épuisé');?>
+                            <?php echo $this->__('Not available');?>
                         </p>
                     <?php endif; ?>
                 </li>
