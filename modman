@@ -1,3 +1,3 @@
-src/app/code/community/Canalweb/Selection                           app/code/community/Canalweb/Selection                          
-src/app/design/frontend/base/default/selection/selection-home.phtml app/design/frontend/base/default/selection/selection-home.phtml
-src/app/etc/modules/Canalweb_Selection.xml                          app/etc/modules/Canalweb_Selection.xml                         
+src/app/code/community/Canalweb/Selection               app/code/community/Canalweb/Selection              
+src/app/design/frontend/base/default/template/selection app/design/frontend/base/default/template/selection
+src/app/etc/modules/Canalweb_Selection.xml              app/etc/modules/Canalweb_Selection.xml             
