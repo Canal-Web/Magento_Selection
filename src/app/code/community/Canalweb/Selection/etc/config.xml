@@ -16,5 +16,25 @@
                     <class>Canalweb_Selection_Model</class>
                 </selection>
             </models>
+            <resources>
+                <selection_setup>
+                    <setup>
+                        <module>Canalweb_Selection</module>
+                        <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+                    </setup>
+                    <connection>
+                        <use>default_setup</use>
+                    </connection>
+                </selection_setup>
+            </resources>
         </global>
+        <frontend>
+            <layout>
+                <updates>
+                    <slider>
+                        <file>canalweb_selection.xml</file>
+                    </slider>
+                </updates>
+            </layout>
+        </frontend>
     </config>

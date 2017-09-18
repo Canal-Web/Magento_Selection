@@ -6,13 +6,13 @@ Exemple d'intégration du bloc (sur une page CMS en back-office, ou dans un layo
 ```xml
 <block type="selection/list" name="selection" template="selection/selection-home.phtml">
     <action method="setData">
-        <name>attribute</name><value>is_top_promo</value>
+        <name>attribute</name><value>selection_is_selected</value>
     </action>
     <action method="setData">
         <name>limit</name><value>4</value>
     </action>
     <action method="setData">
-        <name>orderAttribute</name><value>position</value>
+        <name>orderAttribute</name><value>selection_position</value>
     </action>
 </block>
 ```
@@ -22,6 +22,6 @@ NB: l'orderAttribute est facultatif (le tri se fera sur l'attribut weight si non
 ---
 
 ### TODO :
-* Prévoir migration pour ajouter la création automatique des attributs de sélection et critère de tri ? Comme ça ce serait toujours les mêmes... Mais quid de l'ajout à l'attribute set ?
+* Prévoir migration pour l'ajout à l'attribute set ?
 * Traduire ce readme
 * Pas de solution plus propre pour la query?
