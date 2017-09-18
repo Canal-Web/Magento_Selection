@@ -12,7 +12,7 @@ Exemple d'intégration du bloc (sur une page CMS en back-office, ou dans un layo
         <name>limit</name><value>4</value>
     </action>
     <action method="setData">
-        <name>orderAttribute</name><value>selection_position</value>
+        <name>order_attribute</name><value>selection_position</value>
     </action>
 </block>
 ```
